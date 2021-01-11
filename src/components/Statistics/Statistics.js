@@ -7,7 +7,7 @@ const Statistics = ({ stats, title = "" }) => {
     <section className="statistics">
       {title === "" ? null : <h2 className="title">Upload stats</h2>}
 
-      <ul className="stat-list">
+      <ul className="list stat-list">
         {stats.map((stat) => (
           <StatisticsItem {...stat} key={stat.id} />
         ))}

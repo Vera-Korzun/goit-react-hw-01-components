@@ -4,7 +4,7 @@ import StatsListItem from "./StatsListItem";
 
 const StatsList = ({ stats }) => {
   return (
-    <ul className="stats">
+    <ul className="list stats">
       <StatsListItem {...stats} />
     </ul>
   );
