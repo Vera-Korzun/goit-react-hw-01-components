@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const TransactionHistoryItem = ({ type, amount, currency }) => {
   return (
     <tr>
-      <td>{type}</td>
+      <td>{type[0].toUpperCase() + type.slice(1)}</td>
       <td>{amount}</td>
       <td>{currency}</td>
     </tr>
