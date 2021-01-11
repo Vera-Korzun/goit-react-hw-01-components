@@ -1,6 +1,6 @@
 import React from "react";
-import StatsListItem from "./StatsListItem";
 import PropTypes from "prop-types";
+import StatsListItem from "./StatsListItem";
 
 const StatsList = ({ stats }) => {
   return (
