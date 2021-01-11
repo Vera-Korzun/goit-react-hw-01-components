@@ -1,10 +1,22 @@
-const Profile = (props) => {
+import user from "../../data/user.json";
+import Card from "./Card";
+import StatsList from "./StatsList";
+
+const Profile = () => {
+  //console.log(user);
   return (
     <>
-      <img src={props.avatar} alt="Аватар пользователя" className="avatar" />
-      <p class="name">{props.name}</p>
-      <p class="tag">@{props.tag}</p>
-      <p class="location">{props.location}</p>
+      <div className="profile">
+        <div className="description">
+          <Card
+            name={user.name}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+          />
+        </div>
+        <StatsList stats={user.stats} />
+      </div>
     </>
   );
 };

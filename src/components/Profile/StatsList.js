@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const StatsList = ({ stats }) => {
   return (
-    <ul class="stats">
+    <ul className="stats">
       <StatsListItem {...stats} />
     </ul>
   );
@@ -13,5 +13,5 @@ const StatsList = ({ stats }) => {
 export default StatsList;
 
 StatsList.propTypes = {
-  stats: PropTypes.objectOf(PropTypes.object),
+  stats: PropTypes.object,
 };
