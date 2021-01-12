@@ -18,12 +18,9 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <hr align="center" width="500" size="2" color="#e6e6fa" />
       <Statistics title="Upload stats" stats={statisticalData} />
       {/* <Statistics stats={statisticalData} />; */}
-      <hr align="center" width="500" size="2" color="#e6e6fa" />
       <FriendList friends={friends} />
-      <hr align="center" width="500" size="2" color="#e6e6fa" />
       <TransactionHistory transactions={transactions} />
     </>
   );

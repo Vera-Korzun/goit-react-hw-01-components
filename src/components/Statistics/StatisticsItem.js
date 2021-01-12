@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import randomColor from "../colors/colors.js";
+import styles from "./Statistics.module.css";
 
 const StatisticsItem = ({ label, percentage }) => {
   return (
-    <li className="item" style={{ backgroundColor: `${randomColor()}` }}>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li className={styles.item} style={{ backgroundColor: `${randomColor()}` }}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
 };
