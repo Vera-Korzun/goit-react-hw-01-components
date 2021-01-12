@@ -1,19 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StatisticsItem from "./StatisticsItem";
-import styles from "./Statistics.module.css";
+import Wrapper from "./StatisticsStyles";
 
 const Statistics = ({ stats, title = "" }) => {
   return (
-    <section className={styles.statistics}>
-      {title === "" ? null : <h2 className={styles.title}>Upload stats</h2>}
+    <Wrapper>
+      <section className="statistics">
+        {title === "" ? null : <h2 className="title">Upload stats</h2>}
 
-      <ul className={styles.statsList}>
-        {stats.map((stat) => (
-          <StatisticsItem {...stat} key={stat.id} />
-        ))}
-      </ul>
-    </section>
+        <ul className="list stat-list">
+          {stats.map((stat) => (
+            <StatisticsItem {...stat} key={stat.id} />
+          ))}
+        </ul>
+      </section>
+    </Wrapper>
   );
 };
 

@@ -1,24 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StatsList from "./StatsList";
-import styles from "./Profile.module.css";
+import Wrapper from "./ProfileStyles.js";
 
 const Profile = (props) => {
   return (
-    <div className={styles.profile}>
-      <div className={styles.description}>
-        <img
-          src={props.avatar}
-          alt="Аватар пользователя"
-          className={styles.avatar}
-        />
-        <p className={styles.name}>{props.name}</p>
-        <p className={styles.tag}>@{props.tag}</p>
-        <p className={styles.location}>{props.location}</p>
-      </div>
+    <Wrapper>
+      <div className="profile">
+        <div className="description">
+          <img
+            src={props.avatar}
+            alt="Аватар пользователя"
+            className="avatar"
+          />
+          <p className="name">{props.name}</p>
+          <p className="tag">@{props.tag}</p>
+          <p className="location">{props.location}</p>
+        </div>
 
-      <StatsList stats={props.stats} />
-    </div>
+        <StatsList stats={props.stats} />
+      </div>
+    </Wrapper>
   );
 };
 
