@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.ul`
+const Wrapper = styled.div`
   .friend-list {
     display: flex;
     flex-direction: column;
