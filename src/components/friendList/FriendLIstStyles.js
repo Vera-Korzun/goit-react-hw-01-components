@@ -26,14 +26,13 @@ const Wrapper = styled.ul`
     border-radius: 50%;
     margin-right: 15px;
   }
-  .online {
-    composes: status;
+  .status.online {
     background-color: green;
   }
-  .offline {
-    composes: status;
+  .status.offline {
     background-color: red;
   }
+
   .avatar {
     margin-right: 15px;
   }

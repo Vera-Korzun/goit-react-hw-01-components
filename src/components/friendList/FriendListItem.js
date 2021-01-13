@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  const status = isOnline ? "status.online" : "status.offline";
+  const status = isOnline ? "status online" : "status offline";
   return (
     <li className="item">
       <span className={status}></span>
