@@ -20,7 +20,19 @@ const Wrapper = styled.ul`
     margin-bottom: 15px;
   }
   .status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     margin-right: 15px;
+  }
+  .online {
+    composes: status;
+    background-color: green;
+  }
+  .offline {
+    composes: status;
+    background-color: red;
   }
   .avatar {
     margin-right: 15px;

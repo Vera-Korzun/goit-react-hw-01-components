@@ -7,7 +7,7 @@ const Statistics = ({ stats, title = "" }) => {
   return (
     <Wrapper>
       <section className="statistics">
-        {title === "" ? null : <h2 className="title">Upload stats</h2>}
+        {title && <h2 className="title">Upload stats</h2>}
 
         <ul className="list stat-list">
           {stats.map((stat) => (
